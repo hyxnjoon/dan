@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Cho</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="#top">Daniel Cho</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <svg class="wave-svg" viewBox="0 0 680 90" preserveAspectRatio="none" aria-hidden="true">
+      <path class="wave-path" d="M0,45 C20,45 30,10 50,10 C70,10 75,80 95,80 C115,80 122,20 140,20 C158,20 165,60 185,60 C205,60 210,30 230,30 C250,30 258,70 278,70 C298,70 302,15 322,15 C342,15 350,55 370,55 C390,55 396,35 416,35 C436,35 442,65 462,65 C482,65 488,25 508,25 C528,25 534,50 554,50 C574,50 580,40 600,40 C620,40 626,45 646,45 C660,45 666,45 680,45" />
+    </svg>
+    <h1 class="display">Daniel Cho</h1>
+    <p class="tagline">Structural Dynamics / Vibro-Acoustics / Audio Hardware</p>
+    <p class="lede">
+      I study how things vibrate, and how that turns into sound. My work sits between
+      <span class="accent-word">mechanical engineering</span>, 
+      <span class="accent-word">test engineering</span>, and
+      <span class="accent-word">audio</span>: experimental modal analysis, impact testing,
+      and signal processing, applied to foams, guitars, and instruments I build myself.
+    </p>
+    <div class="quicklinks">
+      <a class="primary" id="resume-link" href="assets/resume/Daniel_Cho_Resume.pdf" download="Daniel_Cho_Resume.pdf">Resume</a>
+      <a href="mailto:hyunjoondc@gmail.com" target="_blank" rel="noopener" class="email-link" data-email="hyunjoondc@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/daniel-cho5" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <p>
+      I'm a Mechanical Engineering BS/MS student at WPI (Music Technology minor), working
+      on structural dynamics, vibration testing, and signal processing. My thesis, advised
+      by Prof. Zhu Mao, centers on statistical energy analysis (SEA) and shock response
+      spectrum (SRS) model validation. I'm also helping him develop a graduate-level
+      signal processing course.
+    </p>
+    <p>
+      This summer I was a LADSS Fellow at Los Alamos National Laboratory, where I designed
+      experimental test methodology end to end for soft-material dynamic characterization:
+      instrumentation, compression testing, impact excitation, full-field Digital Image
+      Correlation, and post-processing to inform finite-element validation on Abaqus.
+      Before that, I was an undergraduate research assistant on a PhD thesis project
+      studying vibration damping in polymer foams, funded through Saint-Gobain. Under
+      Prof. Mao at WPI's Laboratory of Intelligent Systems and Structural Dynamics
+      (LISSD), I led guitar modal and
+      acoustic analysis using impact hammers, modal shakers, accelerometers, and a Laser
+      Doppler Vibrometer to understand how build quality, body deformities, and strings at
+      different price points affect acoustic quality.
+    </p>
+    <p>
+      Outside the lab I lead <strong>Air Piano</strong>, a gesture-controlled MIDI
+      instrument that began as a passion project and became my senior capstone.
+    </p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2 class="section-title">Work</h2>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">PROJECT</span>
+        <span>Aug 2025 &ndash; May 2026</span>
+      </div>
+      <h3 class="entry-title">Air Piano</h3>
+      <p>
+        A gesture-controlled MIDI instrument, my senior capstone. I led mechanical and PCB
+        design end to end: a parametric Onshape enclosure across multiple prototype
+        revisions, and complete KiCad schematics for a Raspberry Pi Pico W, MCP3008 ADC,
+        and USB-C MIDI interface.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <p>
+          As systems integrator across mechanical, electrical, firmware, and computer vision,
+          I built real-time motion-to-MIDI mapping firmware with MediaPipe hand tracking
+          (~14 FPS) and low-latency USB MIDI output, and worked through 12+ hardware and
+          firmware failures along the way, mostly SPI timing and MIDI routing bugs.
+        </p>
+        <!-- MEDIA: Air Piano photos and demo videos -->
+        <div class="media-row">
+          <img class="media-photo" src="assets/img/air-piano-hardware.jpg" alt="Air Piano enclosure interior showing Raspberry Pi, display, potentiometers, and wiring">
+          <img class="media-photo" src="assets/img/air-piano-cad-solid.jpg" alt="Onshape CAD render of the Air Piano enclosure, solid view">
+          <img class="media-photo no-crop" src="assets/img/air-piano-cad-exploded.jpg" alt="Onshape CAD render of the Air Piano enclosure, exploded view showing internal assembly">
+        </div>
+        <div class="media-row">
+          <video class="media-photo" controls preload="metadata" src="assets/video/air-piano-demo-1.mp4"></video>
+        </div>
+        <div class="media-row">
+          <video class="media-photo" controls preload="metadata" src="assets/video/air-piano-demo-2.mp4"></video>
+        </div>
+        <div class="entry-links">
+          <a href="https://digital.wpi.edu/concern/student_works/jh343x996?locale=fr" target="_blank" rel="noopener">Published MQP paper</a>
+        </div>
+      </details>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">RESEARCH</span>
+        <span>May 2025 &ndash; Jul 2025</span>
+      </div>
+      <h3 class="entry-title">Guitar Acoustics &amp; Modal Analysis</h3>
+      <p>
+        Led the full experimental workflow for guitar modal and acoustic analysis under
+        Prof. Zhu Mao at WPI: configured impact hammer, modal shaker, accelerometers, and a
+        Laser Doppler Vibrometer to measure structural vibrational response across body
+        shapes, bracing, and tonewoods.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <p>
+          To understand how build quality affects acoustic quality, I bought guitars and
+          strings at different price points, including instruments with cracks and
+          deformities, and compared their frequency response functions and harmonic
+          profiles. Extracted natural frequencies, damping ratios, and mode shapes with a
+          Crystal Instruments DAQ and MATLAB (pwelch), the same vibro-acoustic techniques
+          used in speaker, enclosure, and instrument design.
+        </p>
+        <!-- MEDIA: test rig photos -->
+        <div class="media-row">
+          <img class="media-photo" src="assets/img/guitar-free-free-rig.jpg" alt="Acoustic guitar suspended in a free-free boundary rig for impact testing">
+          <img class="media-photo" src="assets/img/guitar-ldv-shaker.jpg" alt="Guitar suspended under a Laser Doppler Vibrometer with a modal shaker attached">
+          <img class="media-photo" src="assets/img/guitar-ldv-scan.jpg" alt="Polytec PSV-500 scanning head aimed at a guitar body clamped for LDV scanning">
+        </div>
+        <!-- CODE SLOTS: replace each block's inner text with the actual MATLAB snippet -->
+        <div class="media-row">
+          <img class="media-photo media-chart" src="assets/img/guitar-frf-strings.jpg" alt="Normalized power spectrum comparing nylon guitar strings at three price points on the low E note">
+        </div>
+        <details class="code-details">
+          <summary>View code</summary>
+          <div class="code-slot"><span class="slot-label">%% Impact test: normalized power spectrum across string price points</span>%% === USER PARAMETERS ===
+Fs = 40960;
+noverlap = 0;
+N_peaks_total = 10;
+
+%% === INPUT FILE ===
+file = 'time_force241.mat', 'time_force243.mat','time_force247.mat';
+
+%% === Load ===
+data = load('time_force241.mat');
+window_size = 265728;
+signal = data.(cell2mat(fieldnames(data)));
+signal = signal(2, :);  % force row
+signal = signal(:);     % column vector
+[pxx, f] = pwelch(signal, window_size, noverlap, window_size,Fs);
+figure;
+[pks, locs] = max(pxx);
+f(locs);
+y1= semilogy((2*f/(f(locs))),pxx, 'LineWidth', 2, 'DisplayName','$', 'color', '#0F33E0');
+xlabel('Peak (#)');
+ylabel('Power/Frequency (dB/Hz)');
+title('Bad Guitar, Nylon String, Low E note');
+grid on;
+xlim([0,10]);
+
+hold on
+
+%% === Load ===
+data = load('time_force243.mat');
+window_size = 236646;
+signal = data.(cell2mat(fieldnames(data)));
+signal = signal(2, :);  % force row
+signal = signal(:);     % column vector
+[pxx, f] = pwelch(signal, window_size, noverlap, window_size,Fs);
+[pks, locs] = max(pxx);
+f(locs);
+y2= semilogy((2*f/(f(locs))),pxx, 'LineWidth', 1.5, 'DisplayName','$$', 'color', '#FFEA00');
+grid on;
+xlim([0,10]);
+
+%% === Load ===
+data = load('time_force247.mat');
+window_size = 236646;
+signal = data.(cell2mat(fieldnames(data)));
+signal = signal(2, :);  % force row
+signal = signal(:);     % column vector
+[pxx, f] = pwelch(signal, window_size, noverlap, window_size,Fs);
+[pks, locs] = max(pxx);
+f(locs);
+y3= semilogy((f/(f(locs))),pxx, 'LineWidth', 1, 'DisplayName','$$$', 'color', '#FF1901');
+grid on;
+xlim([0,10]);
+
+hold off
+
+legend([y1 y2 y3],'$', '$$', '$$$');</div>
+        </details>
+        <div class="media-row">
+          <img class="media-photo media-chart" src="assets/img/guitar-ldv-coherence.jpg" alt="LDV FRF magnitude with coherence overlay for guitar body modal testing">
+        </div>
+        <details class="code-details">
+          <summary>View code</summary>
+          <div class="code-slot"><span class="slot-label">%% LDV scan: FRF magnitude with coherence overlay</span>modal_data_good = readuff('Scan_modal_good_guitar_0721.uff');
+
+figure;
+plot(modal_data{66}.x, abs(modal_data{66}.measData));
+xlabel('Frequency (Hz)'); ylabel('Magnitude (mm/s^2/N)');
+title('LDV Testing w/ Shaker on Good Guitar Body');
+
+yyaxis right
+plot(modal_data{221}.x, abs(modal_data{221}.measData));
+ylabel('Coherence'); ylim([0.55 1]);</div>
+        </details>
+        <div class="entry-links">
+          <a class="poster-link" href="assets/poster/Daniel_Cho_Poster_EREE.pdf" data-img="assets/img/poster-eree.jpg" data-title="Instrument Testing via Structural Acoustics" data-filename="Daniel_Cho_Poster_EREE.pdf">Research poster</a>
+        </div>
+      </details>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">PROTOTYPE</span>
+        <span>Earlier iteration</span>
+      </div>
+      <h3 class="entry-title">3x3 MIDI Grid</h3>
+      <p>
+        A smaller, 3x3-button MIDI controller I built before Air Piano, my first time
+        coding and wiring a circuit outside of coursework. It was deliberately a sandbox:
+        a lower-stakes place to break things and learn analog and digital signal basics before
+        committing them to a much more complex build.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <!-- MEDIA: 3x3 MIDI Grid photos -->
+        <div class="media-row">
+          <img class="media-photo" src="assets/img/3x3-midi-final.jpg" alt="Finished 3x3 MIDI grid controller with nine buttons and two knobs">
+        </div>
+        <div class="media-row">
+          <img class="media-photo" src="assets/img/3x3-midi-wiring-2.jpg" alt="3x3 MIDI grid wiring connected to breadboard and Raspberry Pi Pico">
+        </div>
+        <!-- CODE: CircuitPython firmware for the 3x3 MIDI grid -->
+        <details class="code-details">
+          <summary>View code</summary>
+          <div class="code-slot"><span class="slot-label"># CircuitPython: debounced button + smoothed pot MIDI firmware</span>import time
+import board
+import digitalio
+import analogio
+import usb_midi
+
+import adafruit_midi
+from adafruit_midi.note_on import NoteOn
+from adafruit_midi.note_off import NoteOff
+from adafruit_midi.control_change import ControlChange
+
+BUTTON_PINS = [
+    board.GP2, board.GP3, board.GP4,
+    board.GP5, board.GP6, board.GP7,
+    board.GP8, board.GP9, board.GP10
+]
+
+PAD_NOTES = [
+    45, 46, 47,
+    41, 42, 43,
+    37, 38, 39
+]
+
+NOTE_VELOCITY = 127
+DEBOUNCE_S = 0.02  # 20 ms
+
+POT1 = analogio.AnalogIn(board.GP26)
+POT2 = analogio.AnalogIn(board.GP27)
+
+POT1_CC = 74
+POT2_CC = 12
+
+SMOOTH = 0.10     # lower = less lag
+DEADBAND = 6      # higher = no CC spam
+POT_DELAY = 0.01  # slower polling
+
+def adc_to_cc(v):
+    return (v * 127) // 65535
+
+midi = adafruit_midi.MIDI(
+    midi_out=usb_midi.ports[1],
+    out_channel=0
+)
+
+buttons = []
+last_raw = []
+stable = []
+last_flip = []
+
+t0 = time.monotonic()
+for pin in BUTTON_PINS:
+    b = digitalio.DigitalInOut(pin)
+    b.switch_to_input(pull=digitalio.Pull.UP)
+    buttons.append(b)
+
+    v = b.value
+    last_raw.append(v)
+    stable.append(v)
+    last_flip.append(t0)
+
+p1 = adc_to_cc(POT1.value)
+p2 = adc_to_cc(POT2.value)
+last_p1 = p1
+last_p2 = p2
+
+while True:
+    now = time.monotonic()
+
+    # ---- Buttons (debounced) ----
+    for i, b in enumerate(buttons):
+        raw = b.value
+
+        if raw != last_raw[i]:
+            last_raw[i] = raw
+            last_flip[i] = now
+
+        if (now - last_flip[i]) >= DEBOUNCE_S and raw != stable[i]:
+            stable[i] = raw
+            note = PAD_NOTES[i]
+
+            if not stable[i]:   # pressed
+                midi.send(NoteOn(note, NOTE_VELOCITY))
+            else:               # released
+                midi.send(NoteOff(note, 0))
+
+    r1 = adc_to_cc(POT1.value)
+    r2 = adc_to_cc(POT2.value)
+
+    p1 = int((1 - SMOOTH) * p1 + SMOOTH * r1)
+    p2 = int((1 - SMOOTH) * p2 + SMOOTH * r2)
+
+    if abs(p1 - last_p1) >= DEADBAND:
+        midi.send(ControlChange(POT1_CC, p1))
+        last_p1 = p1
+
+    if abs(p2 - last_p2) >= DEADBAND:
+        midi.send(ControlChange(POT2_CC, p2))
+        last_p2 = p2
+
+    time.sleep(POT_DELAY)</div>
+        </details>
+      </details>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">RESEARCH</span>
+        <span>Great Problems Seminar &middot; 2023</span>
+      </div>
+      <h3 class="entry-title">Rice Husk Prescription Bottles</h3>
+      <p>
+        A biodegradable alternative to plastic pill bottles, made from rice husk composite.
+        I designed and fabricated SolidWorks molds, FDM 3D-printed for casting, and the
+        project was selected as the seminar's 2023 class winner for innovation in
+        sustainable manufacturing.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <!-- MEDIA: from the GPS poster, all uncropped -->
+        <div class="media-row">
+          <img class="media-photo media-natural" src="assets/img/rice-husk-cad-mold.jpg" alt="CAD model of the prescription bottle mold used to cast the rice husk composite">
+        </div>
+        <div class="media-row">
+          <img class="media-photo media-natural" src="assets/img/rice-husk-drying-mold.jpg" alt="Rice husk composite drying in the 3D-printed molds">
+        </div>
+        <div class="media-row">
+          <img class="media-photo media-natural" src="assets/img/rice-husk-final.jpg" alt="Final molded rice husk composite disc, a biodegradable bottle material">
+        </div>
+        <!-- LINK SLOT: official title is "Announcing the 2023 Great Problems Seminar Winners:
+             Innovations and Solutions Addressing Global Challenges". Replace with
+             <a href="[URL]" target="_blank" rel="noopener">Award announcement</a> -->
+        <div class="entry-links">
+          <a class="poster-link" href="assets/poster/TheRiceRemedyGPS.pdf" data-img="assets/img/poster-rice.jpg" data-title="The Rice Remedy: Using Rice Husks as an Alternative to Plastic Prescription Bottles" data-filename="TheRiceRemedyGPS.pdf">Research poster</a>
+          <a href="https://www.wpi.edu/news/announcements/announcing-2023-great-problems-seminar-winners-innovations-and-solutions-addressing-global" target="_blank" rel="noopener">Award announcement</a>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="section-title">Contact</h2>
+    <p>Always happy to talk about structural dynamics, acoustics, or hardware. Feel free to reach out.</p>
+    <div class="contact-links">
+      <a href="mailto:hyunjoondc@gmail.com" target="_blank" rel="noopener" class="email-link" data-email="hyunjoondc@gmail.com">hyunjoondc@gmail.com</a>
+      <a href="https://linkedin.com/in/daniel-cho5" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="resume-link-2" href="assets/resume/Daniel_Cho_Resume.pdf" download="Daniel_Cho_Resume.pdf">Resume (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Daniel Cho &middot; Worcester, MA
+  </div>
+</footer>
+
+<div id="poster-overlay" class="poster-overlay" hidden>
+  <div class="poster-topbar">
+    <button id="poster-back-btn" class="poster-back" type="button">&larr; Back to portfolio</button>
+    <span id="poster-overlay-title" class="poster-overlay-title"></span>
+    <a id="poster-download-link" class="poster-download" href="#" download>Download PDF</a>
+  </div>
+  <div class="poster-scroll">
+    <img id="poster-frame-img" class="poster-img" src="" alt="Poster">
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

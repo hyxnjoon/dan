@@ -255,6 +255,33 @@
     font-size: 20px;
     margin: 0 0 10px;
   }
+  .quick-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px 20px;
+    margin: 0 0 16px;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .quick-facts div {
+    min-width: 0;
+  }
+  .quick-facts dt {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 3px;
+  }
+  .quick-facts dd {
+    font-family: var(--sans);
+    font-size: 13.5px;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.4;
+  }
   .entry p {
     font-size: 15px;
     color: var(--ink-dim);

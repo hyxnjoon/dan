@@ -14,8 +14,8 @@
   <div class="wrap">
     <a class="name" href="#top">Daniel Cho</a>
     <div class="links">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#about">About Me</a>
+      <a href="#work">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -29,11 +29,13 @@
     <h1 class="display">Daniel Cho</h1>
     <p class="tagline">Structural Dynamics / Vibro-Acoustics / Audio Hardware</p>
     <p class="lede">
-      I study how things vibrate, and how that turns into sound. My work sits between
-      <span class="accent-word">mechanical engineering</span>, 
-      <span class="accent-word">test engineering</span>, and
-      <span class="accent-word">audio</span>: experimental modal analysis, impact testing,
-      and signal processing, applied to foams, guitars, and instruments I build myself.
+      My interests lie in <span class="accent-word">audio engineering</span>,
+      <span class="accent-word">acoustics</span>, and
+      <span class="accent-word">test engineering</span>, where I apply skills in experimental
+      modal analysis, impact testing, signal processing, and vibration analysis. I'm
+      passionate about bridging the gap between mechanical engineering and acoustics, and
+      I've applied these skills across shock-mitigating and vibration-isolating materials,
+      structural-acoustic testing, and instruments I built myself.
     </p>
     <div class="quicklinks">
       <a class="primary" id="resume-link" href="assets/resume/Daniel_Cho_Resume.pdf" download="Daniel_Cho_Resume.pdf">Resume</a>
@@ -45,37 +47,125 @@
 
 <section id="about">
   <div class="wrap">
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title">About Me</h2>
     <p>
-      I'm a Mechanical Engineering BS/MS student at WPI (Music Technology minor), working
-      on structural dynamics, vibration testing, and signal processing. My thesis, advised
-      by Prof. Zhu Mao, centers on statistical energy analysis (SEA) and shock response
-      spectrum (SRS) model validation. I'm also helping him develop a graduate-level
-      signal processing course.
+      I am a Mechanical Engineering BS/MS student at WPI with a minor in music,
+      expecting to graduate in May 2027. My focus is on structural dynamics, vibration
+      testing, and signal processing. My thesis, advised by Prof. Zhu Mao, centers on
+      Statistical Energy Analysis (SEA) and Shock Response Spectrum (SRS) model
+      validation. I am also helping to develop a graduate-level course on signal
+      processing, handling the workflow from the experimental setups to the course
+      materials.
     </p>
     <p>
-      This summer I was a LADSS Fellow at Los Alamos National Laboratory, where I designed
-      experimental test methodology end to end for soft-material dynamic characterization:
-      instrumentation, compression testing, impact excitation, full-field Digital Image
-      Correlation, and post-processing to inform finite-element validation on Abaqus.
-      Before that, I was an undergraduate research assistant on a PhD thesis project
-      studying vibration damping in polymer foams, funded through Saint-Gobain. Under
-      Prof. Mao at WPI's Laboratory of Intelligent Systems and Structural Dynamics
-      (LISSD), I led guitar modal and
-      acoustic analysis using impact hammers, modal shakers, accelerometers, and a Laser
-      Doppler Vibrometer to understand how build quality, body deformities, and strings at
-      different price points affect acoustic quality.
+      This past summer, I was a LADSS Fellow at <strong>Los Alamos National
+      Laboratory</strong>, where I designed experimental test methodology end to end
+      for soft-material dynamic characterization: instrumentation, compression
+      testing, impact excitation, full-field Digital Image Correlation (DIC), and
+      post-processing to inform finite-element validation on Abaqus.
     </p>
     <p>
-      Outside the lab I lead <strong>Air Piano</strong>, a gesture-controlled MIDI
-      instrument that began as a passion project and became my senior capstone.
+      Previously, I was an undergraduate research assistant on a PhD thesis project
+      studying vibration damping in polymer foams, funded through
+      <strong>Saint-Gobain</strong>. Under Prof. Mao's <strong>Laboratory of
+      Intelligent Systems and Structural Dynamics (LISSD)</strong> at WPI, I led
+      guitar modal and acoustic analysis using impact hammers, modal shakers,
+      accelerometers, and a Laser Doppler Vibrometer (LDV) to understand how build
+      quality, body deformities, material, and string price point affect acoustic
+      quality.
+    </p>
+    <p>
+      Aside from my work in experimental modal analysis and vibro-acoustic testing, I
+      lead the <strong>Air Piano</strong> project, a gesture-controlled MIDI
+      instrument that started off as a passion project then became my senior capstone
+      project.
     </p>
   </div>
 </section>
 
 <section id="work">
   <div class="wrap">
-    <h2 class="section-title">Work</h2>
+    <h2 class="section-title">Past Projects</h2>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">RESEARCH</span>
+        <span>Jun 2026 &ndash; Aug 2026</span>
+      </div>
+      <h3 class="entry-title">LANL LADSS Fellowship</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>R&amp;D</dd></div>
+        <div><dt>Team</dt><dd>3 Fellows, 2 Program Leads, 5 Mentors</dd></div>
+        <div><dt>Timeline</dt><dd>Jun 2026 &ndash; Aug 2026</dd></div>
+        <div><dt>Tools</dt><dd>DIC (Vic-3D), NI PXIe, Abaqus, MATLAB/Python</dd></div>
+      </dl>
+      <p>
+        Traditional quasi-static compression testing can't fully capture how
+        materials behave under dynamic, impact-driven loading. My work explored
+        whether stereo Digital Image Correlation (DIC), which captures full-field
+        strain data simultaneously across a specimen, could serve as a better-suited
+        alternative for characterizing nonlinear foam behavior under impact
+        excitation.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <p>
+          I used stereo DIC (Vic-3D, Photron PFV4) for full-field strain measurement
+          under impact loading, diagnosing and resolving camera-sync calibration
+          drift to bring residual scores back under target threshold. I also
+          designed an end-to-end DAQ and hardware trigger chain (NI PXIe, custom
+          Python/NI-DAQmx scripts) to synchronously acquire load-cell and
+          accelerometer data and trigger the high-speed DIC cameras on impact,
+          eliminating analog trigger jitter. The resulting datasets were processed
+          into stress-strain curves with compliance correction and used to
+          calibrate a HYPERFOAM material model in Abaqus, validating
+          test-simulation correlation for finite-element modeling.
+        </p>
+        <p>
+          This fellowship was led by Shannon Danforth and Samantha Ceballes, and
+          mentored by Jim DeClerck, Kennan Hodovic, Christopher Teti, Peter Beck, and
+          Samuel Hinerman.
+        </p>
+      </details>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <span class="entry-tag">RESEARCH</span>
+        <span>Dec 2024 &ndash; May 2025</span>
+      </div>
+      <h3 class="entry-title">Saint-Gobain Foam Damping Research</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>Undergraduate Research Assistant</dd></div>
+        <div><dt>Team</dt><dd>1 PhD Student, 1 Advisor</dd></div>
+        <div><dt>Timeline</dt><dd>Dec 2024 &ndash; May 2025</dd></div>
+        <div><dt>Tools</dt><dd>Crystal Instruments DAQ, MATLAB, shaker testing</dd></div>
+      </dl>
+      <p>
+        Saint-Gobain's railway product line relies on polymer foam materials to
+        damp vibration in rail transit systems, reducing noise and structural
+        fatigue from train operation. As a research assistant supporting Tessa
+        Lytle's PhD thesis project, I helped characterize how different foam
+        materials performed this damping function and how they compared against
+        competitor materials, my first real experience in a research lab setting.
+      </p>
+      <details class="text-details">
+        <summary>Read more</summary>
+        <p>
+          I assisted with shaker testing on polymer foams (Norseal, silicone,
+          polyurethane) under varying applied mass to help capture their dynamic
+          response, and supported processing of the vibration data with a Crystal
+          Instruments DAQ and MATLAB (pwelch) to extract modal frequencies and
+          damping characteristics. This testing fed into root cause identification
+          of damping performance gaps across competitor materials for
+          Saint-Gobain's product line.
+        </p>
+        <p>
+          This work was led by Tessa Lytle as part of her PhD thesis project,
+          advised by Prof. Zhu Mao.
+        </p>
+      </details>
+    </div>
 
     <div class="entry">
       <div class="entry-meta">
@@ -83,19 +173,33 @@
         <span>Aug 2025 &ndash; May 2026</span>
       </div>
       <h3 class="entry-title">Air Piano</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>Project Leader</dd></div>
+        <div><dt>Team</dt><dd>1 Teammate, 2 Advisors</dd></div>
+        <div><dt>Timeline</dt><dd>Aug 2025 &ndash; May 2026</dd></div>
+        <div><dt>Tools</dt><dd>Onshape, KiCad, Python, MediaPipe</dd></div>
+      </dl>
       <p>
-        A gesture-controlled MIDI instrument, my senior capstone. I led mechanical and PCB
-        design end to end: a parametric Onshape enclosure across multiple prototype
-        revisions, and complete KiCad schematics for a Raspberry Pi Pico W, MCP3008 ADC,
-        and USB-C MIDI interface.
+        This project is a gesture-controlled MIDI instrument, which uses computer vision
+        to recognize 21 landmark points on your hands and track the tip of your fingers
+        to play the piano without physical contact with an instrument. It connects to
+        any DAW for a seamless, expressive playing experience, giving you full control
+        over note, octave, velocity, and effects.
       </p>
       <details class="text-details">
         <summary>Read more</summary>
         <p>
-          As systems integrator across mechanical, electrical, firmware, and computer vision,
-          I built real-time motion-to-MIDI mapping firmware with MediaPipe hand tracking
-          (~14 FPS) and low-latency USB MIDI output, and worked through 12+ hardware and
+          I led mechanical and PCB design end to end: a parametric Onshape enclosure
+          across multiple prototype revisions, and complete KiCad schematics for a
+          Raspberry Pi 4B, MCP3008 ADC, and USB-C MIDI interface. As systems integrator
+          across mechanical, electrical, firmware, and computer vision, I built
+          real-time motion-to-MIDI mapping firmware with MediaPipe hand tracking (~14
+          FPS) and low-latency USB MIDI output, and worked through 12+ hardware and
           firmware failures along the way, mostly SPI timing and MIDI routing bugs.
+        </p>
+        <p>
+          This project was completed with teammate Anika Escobar as part of our MQP,
+          advised by Prof. Zhu Mao and Prof. Ziming Zhang.
         </p>
         <!-- MEDIA: Air Piano photos and demo videos -->
         <div class="media-row">
@@ -109,6 +213,13 @@
         <div class="media-row">
           <video class="media-photo" controls preload="metadata" src="assets/video/air-piano-demo-2.mp4"></video>
         </div>
+        <!-- SCHEMATIC: KiCad schematic for Air Piano -->
+        <details class="code-details">
+          <summary>View schematic</summary>
+          <div class="media-row">
+            <img class="media-photo media-natural" src="assets/img/air-piano-schematic.jpg" alt="KiCad schematic for Air Piano: Raspberry Pi 4B, MCP3008 ADC, potentiometers, and switches">
+          </div>
+        </details>
         <div class="entry-links">
           <a href="https://digital.wpi.edu/concern/student_works/jh343x996?locale=fr" target="_blank" rel="noopener">Published MQP paper</a>
         </div>
@@ -121,21 +232,43 @@
         <span>May 2025 &ndash; Jul 2025</span>
       </div>
       <h3 class="entry-title">Guitar Acoustics &amp; Modal Analysis</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>Researcher</dd></div>
+        <div><dt>Advisor</dt><dd>Prof. Zhu Mao</dd></div>
+        <div><dt>Timeline</dt><dd>May 2025 &ndash; Jul 2025</dd></div>
+        <div><dt>Instruments</dt><dd>Crystal Instruments DAQ, LDV, MATLAB</dd></div>
+      </dl>
       <p>
-        Led the full experimental workflow for guitar modal and acoustic analysis under
-        Prof. Zhu Mao at WPI: configured impact hammer, modal shaker, accelerometers, and a
-        Laser Doppler Vibrometer to measure structural vibrational response across body
-        shapes, bracing, and tonewoods.
+        This project investigates whether guitar price and build quality measurably
+        affect acoustic performance, or whether perceived differences in tone owe more
+        to construction and materials than to cost. Rather than relying on how the
+        instruments sounded by ear, we approached the question from a dynamic
+        standpoint, a more objective, measurable basis for comparison. I tested three
+        guitars and six strings across a range of price points, build quality, and
+        visible deformities, comparing frequency response and harmonic content to see
+        what the data actually showed.
       </p>
       <details class="text-details">
         <summary>Read more</summary>
         <p>
+          I led the full experimental workflow for guitar modal and acoustic analysis
+          under Prof. Zhu Mao at WPI: configured impact hammer, modal shaker,
+          accelerometers, and a Laser Doppler Vibrometer to measure structural
+          vibrational response across body shapes, bracing, and tonewoods.
+        </p>
+        <p>
           To understand how build quality affects acoustic quality, I bought guitars and
           strings at different price points, including instruments with cracks and
           deformities, and compared their frequency response functions and harmonic
-          profiles. Extracted natural frequencies, damping ratios, and mode shapes with a
-          Crystal Instruments DAQ and MATLAB (pwelch), the same vibro-acoustic techniques
-          used in speaker, enclosure, and instrument design.
+          profiles. I extracted natural frequencies, damping ratios, and mode shapes
+          with a Crystal Instruments DAQ and MATLAB (pwelch), the same vibro-acoustic
+          techniques used in speaker, enclosure, and instrument design.
+        </p>
+        <p>
+          The results showed that guitar body quality, size, material, and construction
+          had a far greater influence on acoustic performance than string price.
+          Differences between strings of the same material were subtle and often
+          negligible.
         </p>
         <!-- MEDIA: test rig photos -->
         <div class="media-row">
@@ -230,25 +363,48 @@ ylabel('Coherence'); ylim([0.55 1]);</div>
 
     <div class="entry">
       <div class="entry-meta">
-        <span class="entry-tag">PROTOTYPE</span>
-        <span>Earlier iteration</span>
+        <span class="entry-tag">PROTOTYPE DEVELOPMENT</span>
+        <span>Jan 2026</span>
       </div>
-      <h3 class="entry-title">3x3 MIDI Grid</h3>
+      <h3 class="entry-title">3x3 MIDI Soundboard</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>Designer &amp; Builder</dd></div>
+        <div><dt>Team</dt><dd>Solo project</dd></div>
+        <div><dt>Timeline</dt><dd>Jan 2026</dd></div>
+        <div><dt>Tools</dt><dd>Raspberry Pi Pico W, CircuitPython</dd></div>
+      </dl>
       <p>
-        A smaller, 3x3-button MIDI controller I built before Air Piano, my first time
-        coding and wiring a circuit outside of coursework. It was deliberately a sandbox:
-        a lower-stakes place to break things and learn analog and digital signal basics before
-        committing them to a much more complex build.
+        One of my biggest musical inspirations has been Fred again.., among other
+        artists, and I've always wanted a drum machine/soundboard of my own. As a
+        prerequisite to the Air Piano capstone, I built a smaller 3x3-button MIDI
+        controller to get hands-on experience with firmware coding and circuit wiring
+        outside of coursework, as well as to have an instrument for my very own
+        DJ/musician moment.
       </p>
       <details class="text-details">
         <summary>Read more</summary>
-        <!-- MEDIA: 3x3 MIDI Grid photos -->
+        <!-- MEDIA: 3x3 MIDI Soundboard photos -->
         <div class="media-row">
           <img class="media-photo" src="assets/img/3x3-midi-final.jpg" alt="Finished 3x3 MIDI grid controller with nine buttons and two knobs">
         </div>
         <div class="media-row">
           <img class="media-photo" src="assets/img/3x3-midi-wiring-2.jpg" alt="3x3 MIDI grid wiring connected to breadboard and Raspberry Pi Pico">
         </div>
+        <p>
+          This project was my first coding and electrical engineering project outside
+          of coursework. It was a lower-stakes prototype built with a Raspberry Pi
+          Pico W, a place to break things and learn analog and digital signals in
+          digital instrument creation before committing to a much more complex build.
+          It implements two effects knobs that can load any effect,
+          along with nine drum pads that can each hold a different sound.
+        </p>
+        <!-- SCHEMATIC: KiCad schematic for 3x3 MIDI Soundboard -->
+        <details class="code-details">
+          <summary>View schematic</summary>
+          <div class="media-row">
+            <img class="media-photo media-natural" src="assets/img/3x3-midi-schematic.jpg" alt="KiCad schematic for the 3x3 MIDI Soundboard: Raspberry Pi Pico W, nine push buttons, and two potentiometers">
+          </div>
+        </details>
         <!-- CODE: CircuitPython firmware for the 3x3 MIDI grid -->
         <details class="code-details">
           <summary>View code</summary>
@@ -359,17 +515,49 @@ while True:
     <div class="entry">
       <div class="entry-meta">
         <span class="entry-tag">RESEARCH</span>
-        <span>Great Problems Seminar &middot; 2023</span>
+        <span>Aug 2023 &ndash; Dec 2023</span>
       </div>
       <h3 class="entry-title">Rice Husk Prescription Bottles</h3>
+      <dl class="quick-facts">
+        <div><dt>Role</dt><dd>R&amp;D Researcher</dd></div>
+        <div><dt>Team</dt><dd>7 Team Members, 2 Advisors</dd></div>
+        <div><dt>Timeline</dt><dd>Aug 2023 &ndash; Dec 2023</dd></div>
+        <div><dt>Tools</dt><dd>SolidWorks, FDM 3D Printing</dd></div>
+      </dl>
       <p>
-        A biodegradable alternative to plastic pill bottles, made from rice husk composite.
-        I designed and fabricated SolidWorks molds, FDM 3D-printed for casting, and the
-        project was selected as the seminar's 2023 class winner for innovation in
-        sustainable manufacturing.
+        Nearly 165 million plastic prescription bottles enter landfills each year in
+        the United States. Our team set out to find a biodegradable alternative that
+        addresses the same functional requirements as standard prescription bottles,
+        UV resistance, durability, and contamination resistance, while eliminating the
+        plastic waste problem. "The Rice Remedy" was selected as the seminar's 2023
+        class winner for innovation in sustainable manufacturing, with material and
+        medical applications extending well beyond pill bottles.
       </p>
       <details class="text-details">
         <summary>Read more</summary>
+        <p>
+          Plastic pill bottles are difficult to recycle: they're made primarily from
+          #5 polypropylene, which isn't universally accepted in curbside recycling
+          programs, and their opaque orange coloring causes many facilities to reject
+          them outright. We explored a range of biodegradable composite materials and
+          found that rice husks, a byproduct of one of the world's largest
+          agricultural industries, met every requirement we were targeting. After
+          testing several binding ingredients and techniques to achieve a consistent,
+          homogeneous texture, we identified carboxymethyl cellulose (CMC) powder as
+          the safest option for consumer use while still binding the material
+          effectively. We designed and fabricated molds in SolidWorks, using FDM 3D
+          printing for casting to improve production efficiency and structural
+          integrity.
+        </p>
+        <p>
+          The result: a viable, biodegradable substitute for polypropylene
+          prescription bottles, with potential applications extending into other
+          areas of the medical field.
+        </p>
+        <p>
+          This project was completed with a team of 7 as part of the Great Problems
+          Seminar, advised by Prof. Svetlana Nikitina and Srivatsan Mukunthraj.
+        </p>
         <!-- MEDIA: from the GPS poster, all uncropped -->
         <div class="media-row">
           <img class="media-photo media-natural" src="assets/img/rice-husk-cad-mold.jpg" alt="CAD model of the prescription bottle mold used to cast the rice husk composite">
@@ -396,7 +584,7 @@ while True:
 <section id="contact">
   <div class="wrap">
     <h2 class="section-title">Contact</h2>
-    <p>Always happy to talk about structural dynamics, acoustics, or hardware. Feel free to reach out.</p>
+    <p>Always happy to talk about structural dynamics, acoustics, hardware, or potential opportunities. Feel free to reach out.</p>
     <div class="contact-links">
       <a href="mailto:hyunjoondc@gmail.com" target="_blank" rel="noopener" class="email-link" data-email="hyunjoondc@gmail.com">hyunjoondc@gmail.com</a>
       <a href="https://linkedin.com/in/daniel-cho5" target="_blank" rel="noopener">LinkedIn</a>
